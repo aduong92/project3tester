@@ -1,0 +1,12 @@
+.photoCards {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+}
+
+.img-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 4px double black;
+  box-shadow: 2px 4px 5px grey;
+}

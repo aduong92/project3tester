@@ -1,5 +1,10 @@
 import React, { Component } from "react";
+import { Col, Row, Container } from "../Grid";
+import Jumbotron from "../Jumbotron";
 import API from "../../utils/API";
+import "./ProductDetails.css";
+import { Link } from "react-router-dom";
+import { List, ListItem } from "../List";
 
 class ProductDetails extends Component {
     constructor(props) {
@@ -15,20 +20,47 @@ class ProductDetails extends Component {
       .then(res => this.setState({ product: res.data }))
       .catch(err => console.log(err));
   }
-
   render() {
     return (
-            <div>
-              <h1>
-                {this.state.product.name}
-              </h1>
-            <article>
-              <h3>Category</h3>
-              <p>
-                {this.state.product.category}
-              </p>
-            </article>
-        </div>
+        <Container fluid>
+          
+          <Row>
+            <Col size="md-12">
+              <Jumbotron>
+                <h1>PRODUCTS</h1>              
+              </Jumbotron>
+            </Col>
+          </Row>
+  
+          <Row>
+            <Col size="md-10 md-offset-1">
+              <article>
+                <h4>{this.state.product.name}</h4>
+              </article>
+            </Col>
+          </Row>
+          
+          <Row>
+            <Col size="md-10 md-offset-1">
+              <article>
+                <h4>{this.state.product.description}</h4>
+              </article>
+            </Col>
+          </Row>
+          <Row>
+            <Col size="md-10 md-offset-1">
+              <article>
+                <h4>{this.state.product.category}</h4>
+              </article>
+            </Col>
+          </Row>
+  
+          <Row>
+            <Col size="md-2">
+              <Link to="/Products">← Back to Product List</Link>
+            </Col>
+          </Row>
+        </Container>
     );
   }
 }
