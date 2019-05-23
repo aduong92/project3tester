@@ -1,0 +1,40 @@
+.homepage {
+    background-color:lightseagreen; 
+  
+  }
+  
+  .categories {
+   
+    height: 1000px; 
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: blue;
+    background-color: lightblue;
+  }
+  
+  .categoryimages {
+    position: relative;
+    display: block; 
+    margin: auto; 
+  }
+  
+  .logoImage {
+    margin: auto; 
+    width: 250px; 
+    height: 250px;
+  }
+  
+  .hpimage {
+    width: 300px;
+    height: 300px;
+    display: inline-block;  
+    margin: 15px;
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: black;
+  }
+  
+  .profileButton {
+    display: block; 
+    margin: 0 auto; 
+  }
