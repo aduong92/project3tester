@@ -54,6 +54,13 @@ class ProductDetails extends Component {
               </article>
             </Col>
           </Row>
+          <Row>
+            <Col size="md-10 md-offset-1">
+              <article>
+                <h4>{this.state.product.price}</h4>
+              </article>
+            </Col>
+          </Row>
   
           <Row>
             <Col size="md-2">
