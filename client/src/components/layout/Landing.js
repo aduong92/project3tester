@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 class Landing extends Component {
   render() {
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col s12 center-align">
-            <h4>SlapShotz</h4>
+          <div className="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+
+            <h2 className="brand">SlapShotz</h2>
+
             <div className="col s6">
               <Link
                 to="/register"
@@ -37,6 +39,7 @@ class Landing extends Component {
           </div>
         </div>
       </div>
+
     );
   }
 }
